@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import HeroImg3 from "../components/HeroImg3";
 
 const About = () => {
   return (
-    <div>About</div>
-  )
-}
+    <div>
+      <Navbar />
+      <HeroImg3 />
+      <Footer />
+    </div>
+  );
+};
 
-export default About
+export default About;
