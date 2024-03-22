@@ -29,7 +29,7 @@ const Navbar = () => {
         <h1>PORTFOLYO</h1>
       </Link>
 
-      {/* menüye tıklarsan aktif olup li'ler ekrana gelir */}
+      {/* telefon boyutunda menüye tıklarsan aktif olup li'ler ekrana gelir */}
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li>
           <Link to="/">Home</Link>
@@ -44,6 +44,7 @@ const Navbar = () => {
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
+      {/* telefon boyutundayken menü'ye tıklarsan X, X'e tıklarsan menü iconu gelsin */}
       <div className="hamburger" onClick={handleClick}>
         {click ? (
           <FaTimes size={20} style={{ color: "#fff" }} />
